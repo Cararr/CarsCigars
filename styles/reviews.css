@@ -1,0 +1,67 @@
+#reviews_container {
+	width: 80%;
+	margin: 4rem auto 5rem auto;
+	display: grid;
+	grid-gap: 3rem;
+	grid-auto-rows: 100%;
+}
+
+.reviews_container_single_review_header {
+	color: var(--cigar-name-color);
+}
+
+#reviews_container time {
+	color: var(--secound-brown-color);
+}
+
+.reviews_single_review {
+	background: var(--text-bg-color);
+	position: relative;
+	border-radius: 5%;
+}
+
+.reviews_container_single_review_img {
+	border: 1px solid var(--main-brown-color);
+	margin: 0;
+}
+
+.reviews_container_single_review_img img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.reviews_container_single_review_header {
+	width: 60%;
+	margin: 1rem 0 1rem 1rem;
+}
+
+.reviews_container_single_review_header h2 {
+	margin: 0 0 0.5rem 0;
+	font-family: 'Grenze', serif;
+	line-height: 1;
+	font-size: 2rem;
+	font-style: italic;
+}
+
+.reviews_container_single_review_header p {
+	margin: 0;
+	font-size: 0.8rem;
+}
+
+.reviews_container_single_review_text {
+	margin-left: 1rem;
+	width: 80%;
+}
+
+@media (max-width: 800px) {
+	.reviews_container {
+		width: 90%;
+		margin-bottom: 1rem;
+	}
+	.reviews_container_single_review_header {
+		width: 100%;
+	}
+	.reviews_container_single_review_text {
+		width: 100%;
+	}
+}

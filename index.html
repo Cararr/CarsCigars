@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Dziennik cygar</title>
+		<meta name="description" content="Blog poświęcony cygarom" />
+		<meta name="keywords" content="cygara, recenzje" />
+		<meta name="author" content="Kamil Kacperek" />
+		<meta name="theme-color" content="#4a1b00" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/start.css" />
+		<link rel="stylesheet" href="fontello/css/fontello.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Open+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<a href="#" class="scroll"></a>
+		<header class="tittle">
+			<div class="logo" >
+				<h1>
+					<a tabindex="-1" href="index.html">Car's<br />Cigars</a>
+				</h1>
+				<div class="logo_icon">
+					<a tabindex="-1" href="index.html"><img src="img/Havana Cigar_min.png" /></a>
+				</div>
+			</div>
+			<button id="search_icon" onclick="show_search()">
+				<i class="icon-search"></i>
+			</button>
+			<button id="hamburger_button" onclick="show_menu()"><i class="icon-menu"></i></button>
+			<form action="" method="" id="search_pannel">
+				<div id="form_search">
+					<input
+						type="search"
+						required
+						required pattern="[a-zA-Z0-9\s]+"
+						minlength="3"
+						maxlength="100"
+						name="search_for_cigar"
+						id="form_search_text"
+						placeholder="Szukaj recenzji..."
+					/>
+					<input type="submit" name="search_for_cigar" id="form_search_button" style="
+				font-size: 1.2rem;" value="&#xe801" />
+			</div>
+		</form>
+		</header>
+		<nav id="top_menu">
+			<ul>
+				<li>
+					<a href="index.html" style="text-decoration: underline"> Start </a>
+				</li>
+				<li><a href="reviews.html"> Recenzje </a></li>
+				<li><a href="#"> Ranking </a></li>
+				<li class="dropdown_menu" >
+					<span onclick="show_info()" tabindex="0" id="drop_span">Informacje</span> 
+					<ol class="slide_down_submenu">
+						<li><a href="#">Poradnik dla początkujących</a></li>
+						<li><a href="#">Encyklopedia cygar</a></li>
+						<li><a href="#">Humidor DIY</a></li>
+						<li><a href="#">Jak oceniam cygara?</a></li>
+						<li><a href="#">Polecane sklepy i źródła</a></li>
+					</ol>
+				</li>
+				<li><a href="contact.html"> Kontakt </a></li>
+			</ul>
+		</nav>		
+		<nav id="hamburger_menu">
+			<ul>
+				<li>
+					<a href="index.html" style="text-decoration: underline"> Start </a>
+				</li>
+				<li><a href="reviews.html"> Recenzje </a></li>
+				<li><a href="#"> Ranking </a></li>
+				<li class="dropdown_menu" >
+					<span onclick="show_info()" tabindex="0" id="drop_span">Informacje</span> 
+					<ol id="hamburger_slide_down_submenu">
+						<li><a href="#">Poradnik dla początkujących</a></li>
+						<li><a href="#">Encyklopedia cygar</a></li>
+						<li><a href="#">Humidor DIY</a></li>
+						<li><a href="#">Jak oceniam cygara?</a></li>
+						<li><a href="#">Polecane sklepy i źródła</a></li>
+					</ol>
+				</li>
+				<li><a href="contact.html"> Kontakt </a></li>
+			</ul>
+		</nav>	
+		<figure id="add_banner">
+			<img
+				src="img/cigars_humidor_horizontal.jpg"
+				alt="horizontal cigar image"
+			/>
+		</figure>
+			<main class="main_container">
+				<section class="intro">			<!-- INTRO -->
+					<div class="divider" style="top: -3rem">
+						<img src="img/tabacco_leaf_min.png" alt="tabacco leaves" />
+					</div>
+					<div class="divider" style="bottom: -4rem">
+						<img src="img/clipart-of-cigar_min.png" alt="cigar image" />
+					</div>
+					<article class="intro_text">
+						<h3>Zapraszam do świata Cigar Aficionados!</h3>
+						<p>
+							Jeżeli tu trafiłeś to znaczy to, że albo palaisz już cygara od
+							jakiegoś czasu i chciałbyś porównać swoje doświaczenia z innymi
+							Aficionados albo dopiero poznajesz świat cygar i chciałbyś poszerzyć
+							swoją wiedzę o nim. W obu przypadkach dobrze trafiłeś - witam na blogu
+							Car's Cigar!
+						</p>
+					</article>
+				</section>
+				<section class="last_reviews">		<!-- LAST REVIEWS -->					
+					<header class="last_reviews_header">
+						<h3>Najnowsze recenzje</h3>
+					</header>
+					<article class="last_review st">
+						<figure class="last_review_img">
+							<a href="nasty_fritas.html">
+								<img
+									src="img/reviews/nasty_fritas/nasty_fritas_horizontal.jpg"
+									alt="cygaro nasty fritas"
+								/>
+							</a>
+						</figure>
+						<header class="last_review_tittle">
+							<h3>
+								<a href="nasty_fritas.html"
+									>Drew Estate Liga Privada Único Serie Nasty Fritas</a
+								>
+							</h3>
+						</header>
+						<div class="last_review_date">
+							<h6>
+								<i><time datetime="2020-08-14">14 sierpnia, 2020r.</time></i>
+							</h6>
+						</div>
+						<div class="last_review_text">
+							<p>
+								Paskudna? Bynajmniej! Czekoladowy aromat przyjemnie łączy się z
+								typowo Nikaraguańską pieprzną pikantnością dając cygaro o
+								średnio-pełnej mocy i ciekawym kształcie. Dodaj do tego ogromną
+								ilość produkowanego dymu...
+							</p>
+						</div>
+						<div class="standard_button">
+							<a href="nasty_fritas.html">
+								<button type="button">
+									Czytaj dalej<i class="icon-right"></i>
+								</button>
+							</a>
+						</div>
+					</article>
+					<article class="last_review nd">
+						<figure class="last_review_img">
+							<a href="#">
+								<img
+									src="img/reviews/american_blend/alecbradley_american_clover.jpg"
+									alt="cygaro Alec Bradley American Classic Blend"
+								/>
+							</a>
+						</figure>
+						<header class="last_review_tittle">
+							<h3><a href="#">Alec Bradley American Classic Blend Corona</a></h3>
+						</header>
+						<div class="last_review_date">
+							<h6>
+								<i><time datetime="2020-08-01">1 sierpnia, 2020r.</time></i>
+							</h6>
+						</div>
+						<div class="last_review_text">
+							<p>
+								<i>"Libertas Aequitas"</i> - te zawarte na pierścieniu hasła, wraz z
+								amerykańską flagą pokazują intencję producenta, który tymi cygarami
+								próbuje odtworzyć charakter cygar produkowanych na Florydzie na
+								początku...
+							</p>
+						</div>
+						<div class="standard_button">
+							<a href="#">
+								<button type="button">
+									Czytaj dalej<i class="icon-right"></i>
+								</button>
+							</a>
+						</div>
+					</article>
+					<article class="last_review rd">
+						<figure class="last_review_img">
+							<a href="#">
+								<img
+									src="img/reviews/arturo_fuente/Arturo_Fuente.jpg"
+									alt="cygaro Arturo Fuente Gran Reserva"
+								/>
+							</a>
+						</figure>
+						<header class="last_review_tittle">
+							<h3><a href="#">Arturo Fuente Gran Reserva Petit Corona</a></h3>
+						</header>
+						<div class="last_review_date">
+							<h6>
+								<i><time datetime="2020-07-07">7 lipca, 2020r.</time></i>
+							</h6>
+						</div>
+						<div class="last_review_text">
+							<p>
+								Ociekający złotem pierścień i dosyć wysoka cena wydają się krzyczeć
+								głośno - to klasa premium! W środku, typowo dla marki, Dominikańska
+								wkładka i binder. Czy samo cygaro dotrzymuje kroku okazałemu
+								pierścieniowi?
+							</p>
+						</div>
+						<div class="standard_button">
+							<a href="#">
+								<button type="button">
+									Czytaj dalej<i class="icon-right"></i>
+								</button>
+							</a>
+						</div>
+					</article>
+				</section>
+				<section class="why_cigar">			<!-- LAST WORDS -->			
+					<div class="why_cigar_inner">
+						<figure class="why_cigar_inner_image">
+							<img
+								src="img/knives_out_cigar.jpg"
+								alt="Daniel Craig with cigar from Knives Out movie"
+							/>
+						</figure>
+						<div class="why_cigar_inner_text">
+							<h3>Dlaczego pali się cygara?</h3>
+							<p>
+								Dla przyjemności! Koniec tekstu. A na poważnie - odpowiedź ta jest
+								oczywiście poprawna, ale w świecie palaczy cygar często się o tym
+								zapomina. Wokół palenia cygar narosło wiele mitów i dziwnych zasad
+								wśród których gubi się sens tego zajęcia. Niepisany "kodeks palenia"
+								dyktuje jak trzymać cygaro, jaką zapalniczką je odpalić, jaki wybrać
+								sposób i narzędzie to otwarcia danego cygara, co pić można do
+								palenia a czego absolutnie pić nie można... można by tak długo. O
+								ile niektóre porady są pomocne, zwłaszcza dla początkującego, to
+								jednak pamiętaj, że palić możesz
+								<strong
+									>jak chcesz i z kim chcesz, o ile sprawia Ci to
+									przyjemność.</strong
+								>
+							</p>
+							<p>
+								Czytając moje recenzje cygar pamiętaj, że moje opinie, jak zresztą
+								opinie wszystkich, są subiektywne. Oznacza to, że możesz mieć
+								zupełnie inne zdanie na temat danego cygara, możesz wyczuć zupełnie
+								inne smaki i zapachy. I to jest super, z chęcią porównam z Tobą
+								swoje doświaczenia. Zanim przeczytasz moją pierwszą recenzję
+								zapraszam Cię do <strong><a href="#">artukułu</a></strong> w którym
+								opisałem sposób oceniania przeze mnie cygara.
+							</p>
+							<p style="text-align: center; margin-bottom: 0">
+								<strong>Przyjemnego palenia!</strong>
+							</p>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+				</section>
+		</main>
+			<footer class="footer_container">
+				<div class="socials">
+					<a href="mailto:kontakt@carscigars.pl"><i class="icon-mail"></i></a>
+					<a href="https://www.facebook.com/" target="_blank"
+						><i class="icon-facebook-official"></i
+					></a>
+				</div>
+				<p>
+					Copyright 2020 &copy
+					<a href="index.html"><span class="footer_logo">Car's Cigars</span></a
+					>. <span class="footer_reserved">All Rights Reserved.</span>
+				</p>
+			</footer>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,297 @@
+.review_content a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#review_container {
+	width: 80%;
+	margin: 2rem auto 2rem auto;
+	background: var(--text-bg-color);
+	border-radius: 50px;
+	padding-top: 1rem;
+	line-height: 1.5;
+}
+
+#review_container h1,
+#review_container h3 {
+	text-align: center;
+	line-height: 1.2;
+}
+
+#review_container h3 {
+	letter-spacing: -0.02em;
+	margin: 2rem 0 1rem 0;
+}
+#review_container h1 {
+	font-family: 'Grenze', serif;
+	font-style: italic;
+	line-height: 1;
+}
+
+.review_top_image {
+	margin: 0 0 1rem 0;
+	line-height: 0;
+	width: 100%;
+}
+
+.review_top_image img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.review_tittle h1 {
+	color: var(--cigar-name-color);
+}
+
+.review_tittle p {
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 1rem 0;
+	padding-left: 1rem;
+	color: var(--secound-brown-color);
+}
+
+.review_band {
+	width: 40%;
+	line-height: 0;
+	margin: 0;
+	float: right;
+}
+
+.review_band img {
+	max-width: 100%;
+}
+
+.review_content {
+	padding: 0 1rem;
+	margin-top: 5rem;
+}
+
+.review_content p {
+	margin-top: 0;
+}
+
+.review_ashtray {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.review_nasty_photo_10-8 {
+	float: right;
+	margin: 0 0 0 1rem;
+	line-height: 0;
+	padding: 10px 10px 10px 10px;
+	background-color: var(--main-brown-color);
+	border-radius: 10px;
+	box-sizing: content-box;
+}
+
+.review_nasty_photo_10-8 img {
+	max-width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.review_nasty_photo_10-8 figcaption {
+	font-size: 0.8rem;
+	background: var(--text-bg-color);
+	line-height: 1.1;
+	padding: 10px 10px 10px 10px;
+	font-weight: bold;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+	max-width: 400px;
+}
+
+.nasty_curved {
+	float: left;
+	shape-outside: url('../img/reviews/nasty_fritas/curved.png');
+	shape-margin: 0.5rem;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0;
+}
+
+.review_summary {
+	text-align: center;
+	width: 95%;
+	margin: 0 auto 2rem auto;
+	overflow: auto;
+}
+
+.review_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.review_table td,
+.review_table th {
+	border: 1px solid var(--main-brown-color);
+	padding: 5px 10px;
+}
+
+.review_table th,
+.review_note,
+.score_parts {
+	background-color: var(--secound-brown-color);
+	color: var(--white-text-color);
+}
+
+.table_cigar_name {
+	font-family: 'Grenze', serif;
+	background-color: var(--main-brown-color) !important;
+	word-spacing: 0.2rem;
+	color: var(--cigar-name-color);
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+.h3_review_Fabryka {
+	position: relative;
+}
+
+.h3_review_Fabryka::after {
+	content: url('../img/cigar_vector 75x75.png');
+	position: absolute;
+	left: 85%;
+	bottom: -30%;
+}
+
+.h3_review_Frytki {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5%;
+}
+.h3_review_Frytki span {
+	flex-grow: 2;
+	padding-left: 5%;
+	padding-right: 10%;
+}
+.h3_review_Frytki::before {
+	content: url('../img/Ashtray 50_50.png');
+}
+
+.review_scores {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row-reverse;
+}
+
+.review_note {
+	width: 8rem;
+	height: 8rem;
+	display: flex;
+	border: 2px solid var(--main-brown-color);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 8rem;
+	font-weight: bold;
+}
+
+.review_note_details {
+	height: 8rem;
+	justify-content: center;
+	align-items: center;
+	width: 1.5rem;
+	display: flex;
+	background: #1d1d1d;
+	color: var(--white-text-color);
+	writing-mode: vertical-lr;
+	cursor: pointer;
+	font-size: 1rem;
+	border: none;
+}
+
+.review_note::before {
+	content: 'Ocena';
+	text-align: center;
+	width: 100%;
+	height: 1.4rem;
+	background: var(--main-brown-color);
+	position: absolute;
+	font-size: 1rem;
+	bottom: -1.6rem;
+	border: 2px solid var(--main-brown-color);
+}
+
+.score_parts {
+	width: 0;
+	height: 8rem;
+	display: grid;
+	grid-template: repeat(2, 4rem) / repeat(2, 4rem);
+	justify-content: start;
+	border-radius: 15px;
+	clip-path: polygon(0 0, 85% 0, 85% 64%, 100% 50%, 85% 85%, 85% 100%, 0 100%);
+	transition: width 0.3s;
+}
+
+.score_parts_single {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.score_parts img {
+	height: 40px;
+	margin-right: 0.3rem;
+}
+
+@media (max-width: 800px) {
+	#review_container {
+		width: 100%;
+		margin-top: 1rem;
+	}
+	.review_nasty_photo_10-8 {
+		float: none;
+		margin: 0 auto 1rem auto;
+		max-width: 80%;
+		max-width: 400px;
+	}
+	.review_table {
+		border: 3px solid var(--main-brown-color);
+	}
+	.review_table thead {
+		display: none;
+	}
+	.review_table td {
+		display: flex;
+		text-align: left;
+		padding: 10px 10px 10px 50%;
+		position: relative;
+		font-size: 0.8rem;
+		background-image: url('../img/retina_wood.png');
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	.review_table td:not(:last-child) {
+		border-bottom: none;
+	}
+	.review_table td::before {
+		content: attr(data-label) ':';
+		position: absolute;
+		width: 50%;
+		text-align: left;
+		left: 2%;
+		font-weight: 600;
+	}
+	.review_scores {
+		transform: scale(0.75);
+	}
+	.review_band {
+		margin-right: 1rem;
+	}
+	.h3_review_Fabryka::after,
+	.h3_review_Frytki::before {
+		display: none;
+	}
+	.h3_review_Frytki {
+		padding: 0;
+	}
+}
