@@ -1,5 +1,5 @@
 const banner = document.getElementById('add_banner');
-const mContainer = document.getElementsByClassName('main_container')[0];
+const mContainer = document.querySelector('.main_container');
 const sPannel = document.getElementById('search_pannel');
 const hButt = document.getElementById('hamburger_button');
 const srch = document.getElementById('search_icon');
@@ -7,18 +7,16 @@ const nDetails = document.getElementById('note_details');
 const hMenu = document.getElementById('hamburger_menu');
 const slidMenu = document.getElementById('hamburger_slide_down_submenu');
 const slidTrigger = document.getElementById('drop_span');
-jQuery(function ($) {
+() => {
 	$.scrollTo(0);
-	$('.scroll').click(function () {
-		$.scrollTo($('body'), 1);
-	});
-});
-$(window).scroll(function () {
+	$('.scroll').click(() => $.scrollTo($('body'), 1));
+};
+$(window).scroll(() => {
 	let howWidth = window.innerWidth;
 	if ($(this).scrollTop() > 300 && howWidth > 800) $('.scroll').fadeIn(500);
 	else $('.scroll').fadeOut(500);
 });
-/* ********wysuwane submenu******** */
+/* SLIDE DOWN SUBMENU */
 $(document).ready(function () {
 	$('#top_menu li').hover(
 		function () {
@@ -46,7 +44,7 @@ const enableScroll = () => {
 	window.onscroll = () => {};
 };
 
-/* ********pokazywanie się panelu szukania******** */
+/* SHOW SEARCH PANNEL */
 let isSearchOn = false;
 const show_search = () => {
 	if (isSearchOn === false) {
@@ -76,7 +74,7 @@ const show_search = () => {
 		isSearchOn = false;
 	}
 };
-/* ********pokazywanie się dodatku do oceny******** */
+/* SHOW CIGAR NOTE SCORE PARTS */
 let areDetailsOn = false;
 const hide_note_details = () => {
 	nDetails.style.width = '0';
@@ -92,7 +90,7 @@ const show_note_details = () => {
 	}
 	areDetailsOn = true;
 };
-/* ********pokazywanie się menu na małym ekranie******** */
+/* SHOW HAMBURGER MENU ON SMALL SCREEN */
 let isMenuOn = false;
 const show_menu = () => {
 	if (isMenuOn === false) {
