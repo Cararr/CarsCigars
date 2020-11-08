@@ -1,8 +1,7 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>Dziennik cygar</title>
 	<meta name="description" content="Blog poświęcony cygarom">
 	<meta name="keywords" content="cygara, recenzje">
@@ -14,6 +13,8 @@
 	<link rel="stylesheet" href="fontello/css/fontello.css">
 	<link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script async type="text/javascript" src="scripts/main.js"></script>	
+	<script async type="text/javascript" src="scripts/review.js"></script>	
 </head>
 <body>
 	<a href="#" class="scroll"></a>
@@ -26,10 +27,8 @@
 				<a tabindex="-1" href="index.html"><img src="img/Havana Cigar_min.png" /></a>
 			</div>
 		</div>
-		<button id="search_icon" onclick="show_search()">
-			<i class="icon-search"></i>
-		</button>
-		<button id="hamburger_button" onclick="show_menu()"><i class="icon-menu"></i></button>
+		<button id="search_icon"><i class="icon-search"></i></button>
+		<button id="hamburger_button"><i class="icon-menu"></i></button>
 		<form action="" method="" id="search_pannel">
 			<div id="form_search">
 				<input
@@ -50,12 +49,12 @@
 	<nav id="top_menu">
 		<ul>
 			<li>
-				<a href="index.html" style="text-decoration: underline"> Start </a>
+				<a href="index.html">Start</a>
 			</li>
-			<li><a href="reviews.html"> Recenzje </a></li>
-			<li><a href="#"> Ranking </a></li>
+			<li><a href="reviews.html" style="text-decoration: underline">Recenzje</a></li>
+			<li><a href="#">Ranking</a></li>
 			<li class="dropdown_menu" >
-				<span onclick="show_info()" tabindex="0" id="drop_span">Informacje</span> 
+				<span tabindex="0" id="drop_span">Informacje</span> 
 				<ol class="slide_down_submenu">
 					<li><a href="#">Poradnik dla początkujących</a></li>
 					<li><a href="#">Encyklopedia cygar</a></li>
@@ -64,18 +63,18 @@
 					<li><a href="#">Polecane sklepy i źródła</a></li>
 				</ol>
 			</li>
-			<li><a href="contact.html"> Kontakt </a></li>
+			<li><a href="contact.html">Kontakt</a></li>
 		</ul>
 	</nav>		
 	<nav id="hamburger_menu">
 		<ul>
 			<li>
-				<a href="index.html" style="text-decoration: underline"> Start </a>
+				<a href="index.html"> Start </a>
 			</li>
-			<li><a href="reviews.html"> Recenzje </a></li>
-			<li><a href="#"> Ranking </a></li>
+			<li><a href="reviews.html" style="text-decoration: underline">Recenzje</a></li>
+			<li><a href="#">Ranking</a></li>
 			<li class="dropdown_menu" >
-				<span onclick="show_info()" tabindex="0" id="drop_span">Informacje</span> 
+				<span tabindex="0" class="slideShow" id="drop_span">Informacje</span> 
 				<ol id="hamburger_slide_down_submenu">
 					<li><a href="#">Poradnik dla początkujących</a></li>
 					<li><a href="#">Encyklopedia cygar</a></li>
@@ -84,7 +83,7 @@
 					<li><a href="#">Polecane sklepy i źródła</a></li>
 				</ol>
 			</li>
-			<li><a href="contact.html"> Kontakt </a></li>
+			<li><a href="contact.html">Kontakt</a></li>
 		</ul>
 	</nav>
 	<figure id="add_banner">
@@ -128,7 +127,7 @@
 				<div class="review_note">				
 					<span>9</span>					
 				</div>				
-				<button class="review_note_details"  onclick="show_note_details()">				
+				<button class="review_note_details">				
 					<span>Szczegóły</span>					
 				</button>
 				<div class="score_parts" id="note_details">
@@ -184,6 +183,5 @@
 		<p>Copyright 2020 &copy <a href="index.html"><span class="footer_logo">Car's Cigars</span></a>. <span class="footer_reserved">All Rights Reserved.</span></p>			
 			
 	</footer>
-<script type="text/javascript" src="main.js"></script>	
 </body>
 </html>

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 	<head>
 		<meta charset="utf-8" />
 		<title>Dziennik cygar</title>
 		<meta name="description" content="Blog poświęcony cygarom" />
 		<meta name="keywords" content="cygara, recenzje" />
-		<meta name="author" content="Kamil Kacperek" />
+		<meta name="author" content="Kamil Kacperek"/>
 		<meta name="theme-color" content="#4a1b00" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/main.css" />
@@ -17,11 +16,12 @@
 			rel="stylesheet"
 		/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script async type="text/javascript" src="scripts/main.js"></script>
 	</head>
 	<body>
 		<a href="#" class="scroll"></a>
 		<header class="tittle">
-			<div class="logo" >
+			<div class="logo">
 				<h1>
 					<a tabindex="-1" href="index.html">Car's<br />Cigars</a>
 				</h1>
@@ -29,10 +29,8 @@
 					<a tabindex="-1" href="index.html"><img src="img/Havana Cigar_min.png" /></a>
 				</div>
 			</div>
-			<button id="search_icon" onclick="show_search()">
-				<i class="icon-search"></i>
-			</button>
-			<button id="hamburger_menu" onclick="show_menu()"><i class="icon-menu"></i></button>
+			<button id="search_icon"><i class="icon-search"></i></button>
+			<button id="hamburger_button" ><i class="icon-menu"></i></button>
 			<form action="" method="" id="search_pannel">
 				<div id="form_search">
 					<input
@@ -46,19 +44,19 @@
 						placeholder="Szukaj recenzji..."
 					/>
 					<input type="submit" name="search_for_cigar" id="form_search_button" style="
-					font-size: 1.2rem;" value="&#xe801"/>
+					font-size: 1.2rem;" value="&#xe801" />
 				</div>
 			</form>
 		</header>
 		<nav id="top_menu">
 			<ul>
 				<li>
-					<a href="index.html" style="text-decoration: underline"> Start </a>
+					<a href="index.html">Start</a>
 				</li>
-				<li><a href="reviews.html"> Recenzje </a></li>
-				<li><a href="#"> Ranking </a></li>
+				<li><a href="reviews.html">Recenzje</a></li>
+				<li><a href="#">Ranking</a></li>
 				<li class="dropdown_menu" >
-					<span onclick="show_info()" tabindex="0" id="drop_span">Informacje</span> 
+					<span tabindex="0" id="drop_span">Informacje</span> 
 					<ol class="slide_down_submenu">
 						<li><a href="#">Poradnik dla początkujących</a></li>
 						<li><a href="#">Encyklopedia cygar</a></li>
@@ -67,18 +65,18 @@
 						<li><a href="#">Polecane sklepy i źródła</a></li>
 					</ol>
 				</li>
-				<li><a href="contact.html"> Kontakt </a></li>
+				<li><a href="contact.html" style="text-decoration: underline">Kontakt</a></li>
 			</ul>
 		</nav>		
 		<nav id="hamburger_menu">
 			<ul>
 				<li>
-					<a href="index.html" style="text-decoration: underline"> Start </a>
+					<a href="index.html"> Start </a>
 				</li>
-				<li><a href="reviews.html"> Recenzje </a></li>
-				<li><a href="#"> Ranking </a></li>
+				<li><a href="reviews.html">Recenzje</a></li>
+				<li><a href="#">Ranking</a></li>
 				<li class="dropdown_menu" >
-					<span onclick="show_info()" tabindex="0" id="drop_span">Informacje</span> 
+					<span tabindex="0" class="slideShow" id="drop_span">Informacje</span> 
 					<ol id="hamburger_slide_down_submenu">
 						<li><a href="#">Poradnik dla początkujących</a></li>
 						<li><a href="#">Encyklopedia cygar</a></li>
@@ -87,7 +85,7 @@
 						<li><a href="#">Polecane sklepy i źródła</a></li>
 					</ol>
 				</li>
-				<li><a href="contact.html"> Kontakt </a></li>
+				<li><a href="contact.html" style="text-decoration: underline">Kontakt</a></li>
 			</ul>
 		</nav>
 		<figure id="add_banner">
@@ -116,6 +114,5 @@
 				>. <span class="footer_reserved">All Rights Reserved.</span>
 			</p>
 		</footer>
-		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
