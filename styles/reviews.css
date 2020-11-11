@@ -54,9 +54,9 @@
 }
 
 @media (max-width: 800px) {
-	.reviews_container {
+	#reviews_container {
 		width: 90%;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 	.reviews_container_single_review_header {
 		width: 100%;

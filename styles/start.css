@@ -115,10 +115,13 @@
 .last_review_text {
 	width: 90%;
 	margin: auto;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
 	margin-bottom: 1.5rem;
 	font-size: 0.9rem;
-	height: 6rem;
-	overflow: hidden;
 }
 
 .last_review_text p {

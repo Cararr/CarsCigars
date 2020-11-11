@@ -2,8 +2,8 @@ html {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	color: #331a00;
 	scroll-behavior: smooth;
+	scrollbar-color: var(--main-brown-color) #8a6d5d;
 	--main-brown-color: #4a1b00;
 	--secound-brown-color: #963700;
 	--white-text-color: #e6e6e6;

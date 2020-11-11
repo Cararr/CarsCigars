@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 	<head>
 		<meta charset="utf-8" />
@@ -16,8 +15,46 @@
 			href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Open+Sans:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script async type="text/javascript" src="scripts/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+		<script defer type="text/javascript" src="scripts/reviews_template.js"></script>
+		<script id="reviews-handlebars-template" type="text/x-handlebars-template">
+			{{#each lastReviewsData}}
+				<article class="reviews_single_review">
+					<figure class="reviews_container_single_review_img">
+						<a href={{pageLink}}
+							><img
+								src={{imgSrc}}
+								alt={{imgAlt}}
+						/></a>
+					</figure>
+					<header class="reviews_container_single_review_header">
+						<a href={{pageLink}}
+							><h2>{{cigarName}}</h2></a
+						>
+						<p>
+							<i><time datetime={{dateTimeAtr}}>{{dateTimeText}}</time></i>
+						</p>
+					</header>
+					<div class="reviews_container_single_review_text">
+						<p>
+							{{{cigarText}}}
+						</p>
+					</div>
+					<div
+						class="standard_button"
+						style="margin-left: 1rem; padding-bottom: 1rem">
+						<a href={{pageLink}}>
+							<button type="button">
+								Czytaj dalej<i class="icon-right"></i>
+							</button>
+						</a>
+					</div>
+				</article>		
+			{{/each}}
+		</script>
 	</head>
 	<body>
 		<a href="#" class="scroll"></a>
@@ -96,106 +133,7 @@
 			/>
 		</figure>
 		<main id="reviews_container" class="main_container">
-			<article class="reviews_single_review">
-				<figure class="reviews_container_single_review_img">
-					<a href="nasty_fritas.html"
-						><img
-							src="img/reviews/nasty_fritas/nasty_fritas__5x3.jpg"
-							alt="cygaro nasty fritas"
-					/></a>
-				</figure>
-				<header class="reviews_container_single_review_header">
-					<a href="nasty_fritas.html"
-						><h2>Drew Estate Liga Privada Único Serie Nasty Fritas</h2></a
-					>
-					<p>
-						<i><time datetime="2020-08-14">14 sierpnia, 2020r.</time></i>
-					</p>
-				</header>
-				<div class="reviews_container_single_review_text">
-					<p>
-						Paskudna? Bynajmniej! Czekoladowy aromat przyjemnie łączy się z
-						typowo Nikaraguańską pieprzną pikantnością dając doskonale wyważone
-						cygaro o średnio-pełnej mocy i ciekawym kształcie.
-					</p>
-				</div>
-				<div
-					class="standard_button"
-					style="margin-left: 1rem; padding-bottom: 1rem"
-				>
-					<a href="nasty_fritas.html">
-						<button type="button">
-							Czytaj dalej<i class="icon-right"></i>
-						</button>
-					</a>
-				</div>
-			</article>
-			<article class="reviews_single_review">
-				<figure class="reviews_container_single_review_img">
-					<a href="#"
-						><img
-							src="img/reviews/american_blend/alecbradley_american_5x3.jpg"
-							alt="cygaro Alec Bradley American Classic Blend"
-					/></a>
-				</figure>
-				<header class="reviews_container_single_review_header">
-					<a href="#"><h2>Alec Bradley American Classic Blend Corona</h2></a>
-					<p>
-						<i><time datetime="2020-08-01">1 sierpnia, 2020r.</time></i>
-					</p>
-				</header>
-				<div class="reviews_container_single_review_text">
-					<p>
-						<i>"Libertas Aequitas"</i> - te zawarte na pierścieniu hasła, wraz z
-						amerykańską flagą pokazują intencję producenta, który tymi cygarami
-						próbuje odtworzyć charakter cygar produkowanych na Florydzie na
-						początku XX wieku.
-					</p>
-				</div>
-				<div
-					class="standard_button"
-					style="margin-left: 1rem; padding-bottom: 1rem"
-				>
-					<a href="#">
-						<button type="button">
-							Czytaj dalej<i class="icon-right"></i>
-						</button>
-					</a>
-				</div>
-			</article>
-			<article class="reviews_single_review">
-				<figure class="reviews_container_single_review_img">
-					<a href="#"
-						><img
-							src="img/reviews/arturo_fuente/Arturo_Fuente_5x3.jpg"
-							alt="cygaro Arturo Fuente Gran Reserva"
-					/></a>
-				</figure>
-				<header class="reviews_container_single_review_header">
-					<a href="#"><h2>Arturo Fuente Gran Reserva Petit Corona</h2></a>
-					<p>
-						<i><time datetime="2020-07-07">7 lipca, 2020r.</time></i>
-					</p>
-				</header>
-				<div class="reviews_container_single_review_text">
-					<p>
-						Ociekający złotem pierścień i dosyć wysoka cena wydają się krzyczeć
-						głośno - to klasa premium! W środku, typowo dla marki, Dominikańska
-						wkładka i binder. Czy samo cygaro dotrzymuje kroku okazałemu
-						pierścieniowi?
-					</p>
-				</div>
-				<div
-					class="standard_button"
-					style="margin-left: 1rem; padding-bottom: 1rem"
-				>
-					<a href="#">
-						<button type="button">
-							Czytaj dalej<i class="icon-right"></i>
-						</button>
-					</a>
-				</div>
-			</article>
+
 		</main>
 		<footer class="footer_container">
 			<div class="socials">

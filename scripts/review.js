@@ -6,7 +6,7 @@ function show_note_details() {
 	noteDetails.style.width = '10rem';
 	noteDetails.style.paddingLeft = '3px';
 	reviewNoteClick.removeEventListener('click', show_note_details);
-	setTimeout('hide_note_details()', 5000);
+	setTimeout('hide_note_details()', 7000);
 }
 function hide_note_details() {
 	noteDetails.style.width = '0';
