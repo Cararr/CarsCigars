@@ -76,7 +76,7 @@
 	margin-top: 1rem;
 }
 
-.review_nasty_photo_10-8 {
+.review_photo_10-8 {
 	float: right;
 	margin: 0 0 0 1rem;
 	line-height: 0;
@@ -86,13 +86,13 @@
 	box-sizing: content-box;
 }
 
-.review_nasty_photo_10-8 img {
+.review_photo_10-8 img {
 	max-width: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
 
-.review_nasty_photo_10-8 figcaption {
+.review_photo_10-8 figcaption {
 	font-size: 0.8rem;
 	background: var(--text-bg-color);
 	line-height: 1.1;
@@ -102,16 +102,6 @@
 	border-bottom-right-radius: 10px;
 	text-align: center;
 	max-width: 400px;
-}
-
-.nasty_curved {
-	float: left;
-	shape-outside: url('../img/reviews/nasty_fritas/curved.png');
-	shape-margin: 0.5rem;
-	margin-left: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: 0;
 }
 
 .review_summary {
@@ -148,32 +138,6 @@
 	font-size: 1.5rem;
 }
 
-.h3_review_Fabryka {
-	position: relative;
-}
-
-.h3_review_Fabryka::after {
-	content: url('../img/cigar_vector 75x75.png');
-	position: absolute;
-	left: 85%;
-	bottom: -30%;
-}
-
-.h3_review_Frytki {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 5%;
-}
-.h3_review_Frytki span {
-	flex-grow: 2;
-	padding-left: 5%;
-	padding-right: 10%;
-}
-.h3_review_Frytki::before {
-	content: url('../img/Ashtray 50_50.png');
-}
-
 .review_scores {
 	width: 100%;
 	display: flex;
@@ -202,10 +166,14 @@
 	display: flex;
 	background: #1d1d1d;
 	color: var(--white-text-color);
-	writing-mode: vertical-lr;
+	/* writing-mode: vertical-lr; */
 	cursor: pointer;
 	font-size: 1rem;
 	border: none;
+}
+
+.review_note_details span {
+	transform: rotate(90deg);
 }
 
 .review_note::before {
@@ -248,7 +216,7 @@
 		width: 100%;
 		margin-top: 1rem;
 	}
-	.review_nasty_photo_10-8 {
+	.review_photo_10-8 {
 		float: none;
 		margin: 0 auto 1rem auto;
 		max-width: 80%;
@@ -286,12 +254,5 @@
 	}
 	.review_band {
 		margin-right: 1rem;
-	}
-	.h3_review_Fabryka::after,
-	.h3_review_Frytki::before {
-		display: none;
-	}
-	.h3_review_Frytki {
-		padding: 0;
 	}
 }

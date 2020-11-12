@@ -1,0 +1,42 @@
+.nasty_curved_photo {
+	float: left;
+	shape-outside: url('../img/reviews/nasty_fritas/curved.png');
+	shape-margin: 0.5rem;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0;
+}
+.h3_review_Fabryka {
+	position: relative;
+}
+.h3_review_Fabryka::after {
+	content: url('../img/cigar_vector 75x75.png');
+	position: absolute;
+	left: 85%;
+	bottom: -30%;
+}
+
+.h3_review_Frytki {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5%;
+}
+.h3_review_Frytki span {
+	flex-grow: 2;
+	padding-left: 5%;
+	padding-right: 10%;
+}
+.h3_review_Frytki::before {
+	content: url('../img/Ashtray 50_50.png');
+}
+@media (max-width: 800px) {
+	.h3_review_Fabryka::after,
+	.h3_review_Frytki::before {
+		display: none;
+	}
+	.h3_review_Frytki {
+		padding: 0;
+	}
+}

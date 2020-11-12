@@ -3,7 +3,7 @@
 	margin: 4rem auto 5rem auto;
 	display: grid;
 	grid-gap: 3rem;
-	grid-auto-rows: 100%;
+	/* grid-auto-rows: auto; */
 }
 
 .reviews_container_single_review_header {
