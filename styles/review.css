@@ -1,3 +1,7 @@
+#top_menu ul li:nth-child(2),
+#hamburger_menu ul li:nth-child(2) {
+	text-decoration: underline;
+}
 .review_content a:hover {
 	text-decoration: underline;
 	cursor: pointer;
