@@ -1,12 +1,12 @@
-const banner = document.querySelector('#add_banner');
-const mainContainer = document.querySelector('.main_container');
-const searchPannel = document.querySelector('#search_pannel');
-const hamburgerButton = document.querySelector('#hamburger_button');
-const searchIcon = document.querySelector('#search_icon');
-const noteDetails = document.querySelector('#note_details');
-const hamburgerMenu = document.querySelector('#hamburger_menu');
-const slidMenu = document.querySelector('#hamburger_slide_down_submenu');
-const slidTrigger = document.querySelector('.slideShow');
+const banner = document.querySelector('#add_banner'),
+	mainContainer = document.querySelector('.main_container'),
+	searchPannel = document.querySelector('#search_pannel'),
+	hamburgerButton = document.querySelector('#hamburger_button'),
+	searchIcon = document.querySelector('#search_icon'),
+	noteDetails = document.querySelector('#note_details'),
+	hamburgerMenu = document.querySelector('#hamburger_menu'),
+	slidMenu = document.querySelector('#hamburger_slide_down_submenu'),
+	slidTrigger = document.querySelector('.slideShow');
 searchIcon.addEventListener('click', show_search);
 hamburgerButton.addEventListener('click', show_menu);
 slidTrigger.addEventListener('click', showSlid);
