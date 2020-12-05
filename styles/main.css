@@ -89,6 +89,11 @@ body {
 	display: block;
 }
 
+#top_menu ol li,
+#hamburger_menu ol li {
+	text-decoration: none !important;
+}
+
 #hamburger_button {
 	display: none;
 }
