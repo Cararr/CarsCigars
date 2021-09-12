@@ -47,6 +47,10 @@ body {
 	opacity: 1;
 }
 
+.main_container {
+	min-height: 100vh;
+}
+
 .tittle {
 	display: flex;
 	justify-content: center;

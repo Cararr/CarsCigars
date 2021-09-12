@@ -265,6 +265,9 @@
 	.last_review_img {
 		width: 95%;
 	}
+	.why_cigar {
+		width: 100%;
+	}
 	.why_cigar_inner_text {
 		text-align: justify;
 	}
